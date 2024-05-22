@@ -8,6 +8,7 @@ export HOME="$(cd "`dirname "$0"`"/..; pwd)"
 echo "run path: $PWD"
 
 
+ls -lh app/build.gradle.kts
 
 sed -i '/android {/a \' app/build.gradle.kts
 sed -i '/android {/a \    }' app/build.gradle.kts
