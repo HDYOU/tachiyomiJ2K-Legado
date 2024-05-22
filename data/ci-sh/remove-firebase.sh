@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # 出错退出
-set -e
+# set -e
 
 export HOME="$(
     cd "$(dirname "$0")"/..

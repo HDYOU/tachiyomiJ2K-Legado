@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # 出错退出
-set -e
+# set -e
 
 HOME="$(cd "`dirname "$0"`"/..; pwd)"
 

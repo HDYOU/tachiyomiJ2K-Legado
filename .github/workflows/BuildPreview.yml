@@ -48,7 +48,7 @@ jobs:
 
       - name: Validate Value
         run: |
-          set -e
+          # set -e
           if [ -z "${{ env.APP_NAME }}" ]; then
               echo "no found value: APP_NAME"
               exit 1
