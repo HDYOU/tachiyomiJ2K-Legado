@@ -15,3 +15,5 @@ for file_path in $(find buildSrc/src/ -type f -name "Commands.kt"); do
     echo "org.gradle.unsafe.configuration-cache=true" >>  ~/.gradle/gradle.properties
     echo "org.gradle.unsafe.configuration-cache-problems=warn" >>  ~/.gradle/gradle.properties
 done
+
+exit 0

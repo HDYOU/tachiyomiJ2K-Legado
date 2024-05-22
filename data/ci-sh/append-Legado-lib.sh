@@ -18,3 +18,5 @@ sed -i '/implementation("androidx.activity:activity-compose/a \    implementatio
 sed -i '/minifyEnabled/d'    mangaLegado/build.gradle
 
 cat "$HOME/conf/ci-proguard-rules.pro.conf" >> app/proguard-rules.pro
+
+exit 0

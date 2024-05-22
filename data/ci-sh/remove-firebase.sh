@@ -29,3 +29,5 @@ for file_path in ${files_list[*]}; do
     test -f "$file_path" && sed -i '/firebase/d' "$file_path"
     test -f "$file_path" && sed -i '/Firebase/d' "$file_path"
 done
+
+exit 0

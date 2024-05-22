@@ -34,3 +34,5 @@ echo "cat app/build.gradle.kts:"
 echo ""
 cat app/build.gradle.kts
 echo ""
+
+exit 0

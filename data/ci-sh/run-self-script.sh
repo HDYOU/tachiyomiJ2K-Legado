@@ -17,3 +17,4 @@ for file_path in `find $self_sh_path -type f -name "*.sh"`; do
     sh $file_path
 done
 
+exit 0

@@ -34,3 +34,5 @@ test -f app/src/main/java/eu/kanade/tachiyomi/ui/more/AboutController.kt && sed 
 test -f app/src/main/AndroidManifest.xml && sed -i -n '$!N;/com.google.android.gms.oss.licenses.OssLicensesMenuActivity/!P;D' app/src/main/AndroidManifest.xml
 test -f app/src/main/AndroidManifest.xml && sed -i -n '$!N;/com.google.android.gms.oss.licenses.OssLicensesActivity/!P;D' app/src/main/AndroidManifest.xml
 test -f app/src/main/AndroidManifest.xml && sed -i '/@style\/Theme.OSS/d' app/src/main/AndroidManifest.xml
+
+exit 0

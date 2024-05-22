@@ -57,3 +57,5 @@ fi
 echo ""
 cat mangaLegado/build.gradle
 echo ""
+
+exit 0
