@@ -323,6 +323,15 @@ jobs:
         run: |
           sh tmp_currnet_repo/data/ci-sh/replace-Legado-lib-version.sh
 
+      - name: Update AppUpdateChecker
+        shell: bash
+        run: |
+          for file_path in `find app/src -type f -name "AppUpdateChecker.kt"`; do
+              echo "find AppUpdateChecker path: $file_path"
+              sed -i s"#${{ env.API_REPO }}#${{ github.repository }}#"g   $file_path
+              sed -i s"#${{ env.CLONE_REPOSITORY }}#${{ github.repository }}#"g   $file_path
+          done
+
       - name: Set Gradle configuration-cache
         run: |
           sh tmp_currnet_repo/data/ci-sh/set-gradle-configuration-cache.sh
