@@ -11,7 +11,7 @@ on:
           default: 'false'
  
 env:
-    # api_repo: komikku-app/komikku-preview
+    api_repo: komikku-app/komikku-preview
 
 jobs:
   trigger_preview_build:
